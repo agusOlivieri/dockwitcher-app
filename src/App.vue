@@ -14,7 +14,7 @@ const pageSubtitle = ref('')
 // Función para actualizar el título y subtítulo
 const updateTitles = () => {
   // Establecer el título desde la ruta padre (route.matched[0])
-  pageTitle.value = route.matched[0]?.meta.title || ''
+  pageTitle.value = route.matched[0]?.meta.title || 'Home'
   // Establecer el subtítulo desde la ruta actual (route.meta)
   pageSubtitle.value = route.meta.subtitle || ''
 }
