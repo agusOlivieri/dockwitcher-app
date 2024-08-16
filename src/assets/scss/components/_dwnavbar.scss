@@ -1,5 +1,5 @@
 .navigation-bar {
-    background-color: $primary;
+    background-color: $color-primary;
     height: 150px;
 }
 
@@ -7,9 +7,8 @@
     border: none;
     border-radius: 5px;
     width: 90px;
-    color: $secondary;
-    // background-color: $background; <-- variable para el fondo
-    background-color: white;
+    color: $color-secondary;
+    background-color: $color-background-btn-navbar;
 }
 
 .navigation-bar ul {
@@ -17,6 +16,6 @@
 }
 
 .enabled {
-    color: rgba(245, 245, 245, 0.597)
+    color: $color-enabled
 }
 

@@ -1,20 +1,17 @@
-.app-container {
-}
-
 .line {
   border-bottom: 0.5px solid rgb(238, 114, 114);
 }
 
 body {
-  background-color: whitesmoke;
-  color: whitesmoke;
+  color: $text-color;
   width: 100%;
 }
 
 .headers {
-  height: 300px;
+  // height: 300px;
 }
 
 .workarea{
-  color: $primary;
+  color: $color-primary;
+  margin-top: -60px;
 }

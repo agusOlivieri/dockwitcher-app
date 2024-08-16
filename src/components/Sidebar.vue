@@ -8,16 +8,18 @@ import { RouterLink } from 'vue-router'
       <h2 class="title">dockwitcher</h2>
     </div>
     <div class="line"></div>
-    <div class="side-options">
-      <ul>
+    <div class="side-options mt-4">
+      <ul class="px-2">
         <li>
           <div class="d-flex justify-content-between align-items-center">
-            <div class="">
-              <img id="planification-icon" src="../assets/images/icons8-todo-list-24.png" />
-              Camiones
-            </div>
+            <div class="d-flex container-option">
+              <div class="d-flex align-items-center justify-content-center">
+                <font-awesome-icon icon="fa-solid fa-sliders" />                
+              </div>
+              <span class="fw-medium">Camiones</span>
+          </div>
             <button
-              class="btn btn-primary"
+              class="btn btn-primary p-0"
               id="collapse-btn"
               type="button"
               data-bs-toggle="collapse"
@@ -25,28 +27,29 @@ import { RouterLink } from 'vue-router'
               aria-expanded="false"
               aria-controls="collapseCamiones"
             >
-              <img
-                id="collapse-icon"
-                src="../assets/images/icons8-chevron-abajo-24.png"
-                width="15"
-              />
+              <font-awesome-icon icon="fa-solid fa-angle-down" id="collapse-icon" />
             </button>
           </div>
           <div class="collapse" id="collapseCamiones">
-            <div>
-              <p><RouterLink to="/trucks">Camiones</RouterLink></p>
-              <p><RouterLink to="/drivers">Conductores</RouterLink></p>
+            <div class="container-option d-flex">
+              <div></div>
+              <div class="w-auto">
+                <p class="my-1"><RouterLink to="/trucks">Camiones</RouterLink></p>
+                <p class="my-1"><RouterLink to="/drivers">Conductores</RouterLink></p>
+              </div>
             </div>
           </div>
         </li>
         <li>
           <div class="d-flex justify-content-between align-items-center">
-            <div class="">
-              <img id="planification-icon" src="../assets/images/icons8-todo-list-24.png" />
-              Planificacion
+            <div class="d-flex container-option">
+              <div class="d-flex align-items-center justify-content-center">
+                <font-awesome-icon icon="fa-solid fa-sliders" />                
+              </div>
+              <span class="fw-medium">Planificación</span>
             </div>
             <button
-              class="btn btn-primary"
+              class="btn btn-primary p-0"
               id="collapse-btn"
               type="button"
               data-bs-toggle="collapse"
@@ -54,32 +57,43 @@ import { RouterLink } from 'vue-router'
               aria-expanded="false"
               aria-controls="collapsePlanificacion"
             >
-              <img
-                id="collapse-icon"
-                src="../assets/images/icons8-chevron-abajo-24.png"
-                width="15"
-              />
+              <font-awesome-icon icon="fa-solid fa-angle-down" id="collapse-icon" />
             </button>
           </div>
           <div class="collapse" id="collapsePlanificacion">
-            <div>
-              <p><a href=" /planning/dashboard">Panel</a></p>
-              <p><a href="/planning/incommings">Recepciones</a></p>
-              <p><a href="/planning/outgoings">Expediciones</a></p>
+            <div class="container-option d-flex">
+              <div></div>
+              <div class="w-auto">
+                <p class="my-1"><RouterLink to="/planning/dashboard">Panel</RouterLink></p>
+                <p class="my-1"><RouterLink to="/planning/incommings">Recepciones</RouterLink></p>
+                <p class="my-1"><RouterLink to="/planning/outgoings">Expediciones</RouterLink></p>
+              </div>
             </div>
           </div>
         </li>
         <li>
-          <img id="control-muelle-icon" src="../assets/images/user-nurse-solid.svg" width="24" />
-          Control de muelle
+          <div class="d-flex container-option">
+            <div class="d-flex align-items-center justify-content-center">
+              <font-awesome-icon icon="fa-solid fa-truck-ramp-box" />              
+            </div>
+            <span class="fw-medium">Control de muelle</span>
+          </div>
         </li>
         <li>
-          <img id="camion-icon" src="../assets/images/truck-solid.svg" width="24" />
-          Transporte
+          <div class="d-flex container-option">
+            <div class="d-flex align-items-center justify-content-center">
+              <font-awesome-icon icon="fa-solid fa-truck-moving" />
+            </div>
+            <span class="fw-medium">Transporte</span>
+          </div>
         </li>
         <li>
-          <img id="configuration-icon" src="../assets/images/gear-solid.svg" width="24" />
-          Configuración
+          <div class="d-flex container-option">
+            <div class="d-flex align-items-center justify-content-center">
+              <font-awesome-icon icon="fa-solid fa-gear"/>
+            </div>
+            <span class="fw-medium">Configuración</span>
+          </div>
         </li>
       </ul>
     </div>

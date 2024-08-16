@@ -1,8 +1,8 @@
 .sidebar {
-  background-color: white; //Cambiar esto por una variable de color (secondary)
+  background-color: $color-background-sidebar; //Cambiar esto por una variable de color (secondary)
   width: 230px;
   height: 100vh;
-  color: $primary;
+  color: $color-primary;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -19,24 +19,40 @@
 }
 
 .side-options {
-  padding-top: 10px;
-
+  color: $color-primary;
+  
   ul {
-    padding-top: 10px;
     list-style: none;
 
     li {
-      margin: 10px 0;
+      color: $text-color-sidebar;
 
       a {
-        color: $primary;
         text-decoration: none;
-      }
+        color: $text-color-sidebar;
+      };
+
     }
   }
+}
+
+.container-option {
+  div {
+    width: 30px;
+    color: $color-primary;
+  }
+
+}
+
+.asd {
+  width: 50px;
 }
 
 #collapse-btn {
   background-color: white;
   border: none;
+}
+
+#collapse-icon {
+  color: $color-secondary
 }

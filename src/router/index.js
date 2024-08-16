@@ -26,38 +26,47 @@ const router = createRouter({
       children: [
         {
           path:'dashboard',
-          component: PlanningView
+          component: PlanningView,
+          meta: { subtitle: 'Panel'}
 
         },
         {
           path:'incommings',
-          component: IncommingsView
+          component: IncommingsView,
+          meta: { subtitle: 'Recepciones'}
 
         },
         {
           path:'outgoings',
-          component: OutgoingsView
+          component: OutgoingsView,
+          meta: { subtitle: 'Expediciones'}
 
         },
-
-      ]
+      ],
+      meta: { title: 'Planificación'}
+    },
+    {
+      path: '/trucks',
+      children: [
+        {
+          path: '/trucks',
+          component: TrucksView,
+          meta: { subtitle: 'Camiones' }
+        },
+        {
+          path: '/drivers',
+          component: DriversView,
+          meta: { subtitle: 'Conductores' }
+        }
+      ],
+      meta: { title: 'Camiones' }
     },
     {
       path: '/dashboard',
       name: 'dashboard',
       component: DashboardView
     },
-   
-    {
-      path: '/trucks',
-      name: 'trucks',
-      component: TrucksView
-    },
-    {
-      path: '/drivers',
-      name: 'drivers',
-      component: DriversView
-    }
+  
   ]
 })
 

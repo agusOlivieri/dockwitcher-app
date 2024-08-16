@@ -3,10 +3,10 @@
 
 <template>
     <div class="headerbar">
-        <div class="icons">
-            <img id="configuration" src="../assets/images/icons8-ajustes-24.png" width="20">
-            <img id="notification" src="../assets/images/icons8-notification-24.png" width="20">
-            <img id="user-logo" src="../assets/images/icons8-usuario-30.png">
+        <div class="d-flex align-items-center">
+            <font-awesome-icon icon="fa-solid fa-gear" class="fa-icon"/>
+            <font-awesome-icon icon="fa-solid fa-bell" class="fa-icon"/>
+            <font-awesome-icon icon="fa-solid fa-user" class="fa-icon"/>
         </div>
         <p id="user-name">User name</p>
     </div>

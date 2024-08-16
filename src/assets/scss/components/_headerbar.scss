@@ -1,5 +1,5 @@
 .headerbar {
-    background: $primary;
+    background: $color-primary;
     color: whitesmoke;
     height: 75px;
     display: flex;
@@ -8,10 +8,11 @@
     padding-right: 20px;
 }
 
-#configuration, #user-logo, #notification, #user-name {
+.fa-icon {
     margin: 0 10px;
 }
 
 #user-name {
     font-size: 1.1rem;
+    margin: 0
 }

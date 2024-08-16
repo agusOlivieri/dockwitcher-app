@@ -5,8 +5,8 @@
     /* Eliminar efectos de hover */
     &:hover,
     &:focus {
-    background-color: $background !important;
-    color: $secondary !important;
+    background-color: $color-background !important;
+    color: $color-secondary !important;
     box-shadow: none !important;
     }
     
@@ -15,16 +15,10 @@
     &:focus:active,
     &.active,
     &:focus.active {
-    background-color: $background !important;
-    color: $secondary !important;
+    background-color: $color-background !important;
+    color: $color-secondary !important;
     box-shadow: none !important;
     }
-    
-    /* Eliminar outline al hacer click */
-    // &:focus {
-    // outline: none !important;
-    // box-shadow: none !important;
-    // }
 }
 
 
